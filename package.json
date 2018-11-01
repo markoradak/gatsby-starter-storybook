@@ -1,0 +1,44 @@
+{
+  "name": "gatsby-starter-storybook",
+  "description": "Gatsby Storybook Starter",
+  "version": "1.0.0",
+  "author": "Marko Radak <mail@markoradak.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markoradak/gatsby-starter-storybook"
+  },
+  "keywords": [
+    "gatsby",
+    "storybook"
+  ],
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "storybook": "start-storybook -p 9000 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o storybook"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.19",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@storybook/addon-actions": "^4.0.2",
+    "@storybook/addon-links": "^4.0.2",
+    "@storybook/addon-notes": "^4.0.2",
+    "@storybook/addons": "^4.0.2",
+    "@storybook/react": "^4.0.2",
+    "babel-loader": "^8.0.4"
+  }
+}
