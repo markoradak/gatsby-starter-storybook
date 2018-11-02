@@ -2,7 +2,7 @@
   command = "yarn build"
   publish = "public"
 
-[context.storybook]
+[context.branch-deploy]
   command = "yarn build-storybook"
   publish = "storybook"
 
