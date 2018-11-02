@@ -5,9 +5,3 @@
 [context.branch-deploy]
   command = "yarn build-storybook"
   publish = "storybook"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
