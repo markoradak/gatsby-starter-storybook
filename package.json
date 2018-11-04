@@ -1,0 +1,56 @@
+{
+  "name": "gatsby-starter-storybook",
+  "description": "Gatsby Storybook Starter",
+  "version": "1.0.0",
+  "author": "Marko Radak <mail@markoradak.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markoradak/gatsby-starter-storybook"
+  },
+  "keywords": [
+    "gatsby",
+    "storybook",
+    "styled-components",
+    "reset-css",
+    "eslint",
+    "netlify"
+  ],
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "storybook": "start-storybook -p 9000 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o storybook"
+  },
+  "dependencies": {
+    "gatsby": "^2.0.19",
+    "gatsby-image": "^2.0.15",
+    "gatsby-plugin-favicon": "^3.1.4",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.7",
+    "gatsby-plugin-styled-components": "^3.0.1",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-sharp": "^2.1.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^4.0.3",
+    "styled-reset-advanced": "^1.0.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^4.0.2",
+    "@storybook/addon-links": "^4.0.2",
+    "@storybook/addon-notes": "^4.0.2",
+    "@storybook/addons": "^4.0.2",
+    "@storybook/react": "^4.0.2",
+    "babel-plugin-styled-components": "^1.8.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
