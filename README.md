@@ -21,7 +21,7 @@
 
 ## Quick start
 ```bash
-$ gatsby new my-awesome-site https://github.com/markoradak/gatsby-starter-storybook-advanced
+$ gatsby new my-awesome-site https://github.com/markoradak/gatsby-starter-storybook
 
 $ cd my-awesome-site
 $ yarn start || yarn develop
