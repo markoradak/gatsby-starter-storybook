@@ -4,6 +4,8 @@ import reset from 'styled-reset-advanced';
 export default createGlobalStyle`
   ${reset};
 
-  font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-weight: 500;
+  body {
+    font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-weight: 500;
+  }
 `;
