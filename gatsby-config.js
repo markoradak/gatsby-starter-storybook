@@ -21,6 +21,7 @@ module.exports = {
         name: 'src',
       },
     },
+    'gatsby-plugin-root-import',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-offline',
     'gatsby-transformer-sharp',

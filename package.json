@@ -18,11 +18,13 @@
   ],
   "scripts": {
     "start": "run-p start:**",
-    "start:gatsby": "gatsby develop -H 0.0.0.0",
+    "start:gatsby": "gatsby develop -H 0.0.0.0 -o",
     "start:storybook": "start-storybook -p 9000 -c .storybook",
-    "build": "run-p build:**",
+    "build": "run-p 'build:!(storybook)'",
     "build:gatsby": "gatsby build",
-    "build:storybook": "build-storybook -c .storybook -o storybook"
+    "build:storybook": "build-storybook -c .storybook -o storybook",
+    "serve": "gatsby serve -o -p 10000",
+    "clean": "gatsby clean"
   },
   "dependencies": {
     "gatsby": "^2.15.6",
@@ -30,6 +32,7 @@
     "gatsby-plugin-manifest": "^2.2.14",
     "gatsby-plugin-offline": "^3.0.2",
     "gatsby-plugin-react-helmet": "^3.1.6",
+    "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-sharp": "^2.2.19",
     "gatsby-plugin-styled-components": "^3.1.4",
     "gatsby-source-filesystem": "^2.1.21",
