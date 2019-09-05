@@ -4,6 +4,17 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Gatsby Storybook Starter',
+        short_name: 'Gatsby Storybook Starter',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#744C9E',
+        display: 'standalone',
+        icon: 'src/assets/logos/icon.png',
+      },
+    }, {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/`,

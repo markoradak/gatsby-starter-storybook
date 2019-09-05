@@ -6523,6 +6523,16 @@ gatsby-page-utils@^0.0.16:
     micromatch "^3.1.10"
     slash "^3.0.0"
 
+gatsby-plugin-manifest@^2.2.14:
+  version "2.2.14"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.14.tgz#414d8eb774f6a2a2da264295330b93e6ee91c758"
+  integrity sha512-4GOyQIVMU+9VMQebXF6F+2TCXyWYe3tmBXEH4HEsdqdz0VEx4ZRsLJYfVl+OHOEFThOfSgkqsISv7NheWwk5KQ==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    gatsby-core-utils "^1.0.7"
+    semver "^5.7.1"
+    sharp "^0.23.0"
+
 gatsby-plugin-offline@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.0.3.tgz#0bab0a8fe0957c7a6893784b579ce2a048293501"
