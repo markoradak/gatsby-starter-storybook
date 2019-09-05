@@ -13,7 +13,7 @@
 ##  What's inside?
 
 - Gatsby (v2)
-- Storybook (v4)
+- Storybook (v5)
 - Styled Components (v4)
 - Styled Reset (Advanced)
 - Netlify Conf
