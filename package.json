@@ -17,11 +17,12 @@
     "netlify"
   ],
   "scripts": {
-    "start": "gatsby develop -H 0.0.0.0",
-    "develop": "gatsby develop -H 0.0.0.0",
-    "build": "gatsby build",
-    "storybook": "start-storybook -p 9000 -c .storybook",
-    "build-storybook": "build-storybook -c .storybook -o storybook"
+    "start": "run-p start:**",
+    "start:gatsby": "gatsby develop -H 0.0.0.0",
+    "start:storybook": "start-storybook -p 9000 -c .storybook",
+    "build": "run-p build:**",
+    "build:gatsby": "gatsby build",
+    "build:storybook": "build-storybook -c .storybook -o storybook"
   },
   "dependencies": {
     "gatsby": "^2.15.6",
@@ -50,6 +51,7 @@
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.3"
+    "eslint-plugin-react": "^7.14.3",
+    "yarn-run-all": "^3.1.1"
   }
 }
