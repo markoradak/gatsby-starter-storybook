@@ -2,17 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import styled, { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset-advanced';
 
-const GlobalStyle = createGlobalStyle`
-  ${reset};
-`;
-
-const App = styled.div`
-  font-family: 'Avenir Next', 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-weight: 500;
-`;
+import GlobalStyle from './GlobalStyle';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -35,9 +26,9 @@ const Layout = ({ children }) => (
           />
         </Helmet>
         <GlobalStyle />
-        <App>
+        <>
           {children}
-        </App>
+        </>
       </>
     )}
   />

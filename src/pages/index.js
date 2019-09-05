@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '../components/Layout';
+import Layout from '../global/Layout';
 import Image from '../components/Image';
 
 const Page = styled.div`

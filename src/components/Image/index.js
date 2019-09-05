@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SVG from '../assets/images/gatsby+storybook.svg';
+import SVG from '../../assets/images/gatsby+storybook.svg';
 
 const Img = styled.img`
   width: 100%;
