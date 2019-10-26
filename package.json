@@ -17,17 +17,17 @@
     "netlify"
   ],
   "scripts": {
-    "start": "run-p start:**",
+    "start": "concurrently --kill-others \"npm run start:gatsby\" \"npm run storybook\"",
     "start:gatsby": "gatsby develop -H 0.0.0.0 -o",
-    "start:storybook": "start-storybook -p 9000 -c .storybook",
-    "build": "run-p 'build:!(storybook)'",
+    "storybook": "start-storybook -p 9000 -c .storybook",
+    "build": "npm run build:gatsby && npm run build:storybook",
     "build:gatsby": "gatsby build",
-    "build:storybook": "build-storybook -c .storybook -o storybook",
+    "build:storybook": "build-storybook -c .storybook -o public/docs",
     "serve": "gatsby serve -o -p 8080",
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.15.6",
+    "gatsby": "^2.17.4",
     "gatsby-image": "^2.2.17",
     "gatsby-plugin-manifest": "^2.2.14",
     "gatsby-plugin-offline": "^3.0.2",
@@ -45,12 +45,13 @@
     "styled-reset-advanced": "^1.0.1"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.1.11",
-    "@storybook/addon-links": "^5.1.11",
-    "@storybook/addon-notes": "^5.1.11",
-    "@storybook/addons": "^5.1.11",
-    "@storybook/react": "^5.1.11",
+    "@storybook/addon-actions": "^5.2.5",
+    "@storybook/addon-links": "^5.2.5",
+    "@storybook/addon-notes": "^5.2.5",
+    "@storybook/addons": "^5.2.5",
+    "@storybook/react": "^5.2.5",
     "babel-plugin-styled-components": "^1.10.6",
+    "concurrently": "^5.0.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
