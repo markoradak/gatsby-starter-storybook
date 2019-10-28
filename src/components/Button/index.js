@@ -1,11 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 const Button = ({ label, link }) => (
-  <Link to={link} style={{ 'padding-top': '20px' }}>
+  <a to={link} style={{ 'padding-top': '20px' }}>
     <ButtonWrapper type="button">{label}</ButtonWrapper>
-  </Link>
+  </a>
 );
 
 export default Button;
