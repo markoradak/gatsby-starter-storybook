@@ -17,9 +17,9 @@
     "netlify"
   ],
   "scripts": {
-    "start": "concurrently --kill-others \"npm run start:gatsby\" \"npm run storybook\"",
+    "start": "run-p start:**",
     "start:gatsby": "gatsby develop -H 0.0.0.0 -o",
-    "storybook": "start-storybook -p 9000 -c .storybook",
+    "start:storybook": "start-storybook -p 9000 -c .storybook",
     "build": "npm run build:gatsby && npm run build:storybook",
     "build:gatsby": "gatsby build",
     "build:storybook": "build-storybook -c .storybook -o public/docs",
@@ -51,7 +51,6 @@
     "@storybook/addons": "^5.2.5",
     "@storybook/react": "^5.2.5",
     "babel-plugin-styled-components": "^1.10.6",
-    "concurrently": "^5.0.0",
     "eslint": "^6.3.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
