@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Layout from '../global/Layout';
 import Image from '../components/Image';
+import Button from '../components/Button';
 
 const Page = styled.div`
   width: 100%;
@@ -34,6 +35,7 @@ const IndexPage = () => (
       <Image />
       <Heading>GatsbyJS + Storybook</Heading>
       <Label>Starter</Label>
+      <Button label="Storybook" link="/docs?path=/story/image--default" />
     </Page>
   </Layout>
 );
